@@ -1,0 +1,2 @@
+module NewbooksHelper
+end

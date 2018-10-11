@@ -1,0 +1,6 @@
+<h1>Editing Newbook</h1>
+
+<%= render 'form', newbook: @newbook %>
+
+<%= link_to 'Show', @newbook,class: "show_#{@newbook.id}" %> |
+<%= link_to 'Back', newbooks_path,class: "back" %>
