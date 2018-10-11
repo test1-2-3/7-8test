@@ -2167,3 +2167,23 @@ Processing by NewbooksController#index as HTML
 Completed 200 OK in 164ms (Views: 137.9ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/" for 10.0.2.2 at 2018-10-11 08:56:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by NewbooksController#top as HTML
+  Rendering newbooks/top.html.erb within layouts/application
+  Rendered newbooks/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 380ms (Views: 365.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/newbooks" for 10.0.2.2 at 2018-10-11 08:56:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NewbooksController#index as HTML
+  Rendering newbooks/index.html.erb within layouts/application
+  [1m[36mNewbook Load (0.8ms)[0m  [1m[34mSELECT "newbooks".* FROM "newbooks"[0m
+  ↳ app/views/newbooks/index.html.erb:15
+  Rendered newbooks/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 120ms (Views: 88.7ms | ActiveRecord: 5.3ms)
+
+
